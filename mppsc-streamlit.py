@@ -76,7 +76,7 @@ def load_pretrained_model(model_path, device):
         SentenceEncoder=sentbertmodel, device=device, ContextEncoder="GRUContextEncoder"
     ).to(device)
 
-    model.load_state_dict(torch.load(model_path), strict=False)
+    model.load_state_dict(torch.load(model_path, map_location=device), strict=False)
 
     model.eval()
 

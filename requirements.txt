@@ -1,0 +1,7 @@
+streamlit==0.79.0
+torch==1.7.1
+transformers==4.4.2
+sentence-transformers==1.0.3
+nltk==3.5
+mlflow==1.14.1
+tensorboard==2.4.1
